@@ -3771,7 +3771,7 @@ class Dropdown {
          if (isset($group['children'])) {
             foreach ($group['children'] as &$children) {
                $children['items_id'] = $children['id'];
-               $children['id']       = "Group".$children['id'];
+               $children['id']       = "Group_".$children['id'];
                $children['itemtype'] = "Group";
             }
          }
@@ -3793,7 +3793,7 @@ class Dropdown {
             if (isset($supplier['children'])) {
                foreach ($supplier['children'] as &$children) {
                   $children['items_id'] = $children['id'];
-                  $children['id']       = "Supplier".$children['id'];
+                  $children['id']       = "Supplier_".$children['id'];
                   $children['itemtype'] = "Supplier";
                }
             }
